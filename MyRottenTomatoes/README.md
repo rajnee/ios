@@ -26,9 +26,9 @@ Completed user stories:
     Could not get the error message to work as I wanted
     Could not get the loading state consistently using SVProgressHUD
 
-    Walkthrough of all user stories:
+Walkthrough of all user stories:
 
-      ![Video Walkthrough](walkthrough.gif)
+![Video Walkthrough](walkthrough.gif)
 
     GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
