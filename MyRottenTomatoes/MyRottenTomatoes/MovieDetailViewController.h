@@ -12,4 +12,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *labelSynopsis;
 @property (strong, nonatomic) IBOutlet UILabel *labelTitle;
 @property (strong, nonatomic) NSDictionary* movie;
+@property (weak, nonatomic) IBOutlet UIImageView *imageFullView;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "MovieDetailViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface MovieDetailViewController ()
 
@@ -19,6 +20,11 @@
     // Do any additional setup after loading the view from its nib.
     self.labelSynopsis.text = self.movie[@"synopsis"];
     self.labelTitle.text = self.movie[@"title"];
+    NSString* movieThumbUrl = [self.movie valueForKeyPath:@"posters.thumbnail"];
+    NSString* movieOriUrl = [movieThumbUrl stringByReplacingOccurrencesOfString:@"tmb" withString:@"ori"];
+    [self.imageFullView setImageWithURL:[NSURL URLWithString:movieThumbUrl]];
+    [self.imageFullView setImageWithURL:[NSURL URLWithString:movieOriUrl]];
+
 }
 
 - (void)didReceiveMemoryWarning {
